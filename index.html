@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login Page</title>
+	<h1 style="background-color: beige;border-color:yellowgreen;border-radius: 50px;">CLOTING STORE</h1>
+	
+	<style type="text/css">
+		div {
+			background: ghostwhite ;
+			border: 1px solid;
+			max-width: 500px;
+			margin: auto;
+			text-align: center;
+			align-self: right;
+			
+		}
+		h1 {
+			text-align: center;
+			color: rebeccapurple;
+			font-size: 80px;
+		}
+	</style>
+	<script type="text/javascript">
+		function log(Email,Password) {
+			//var Email=document.getElementById("Email");
+			//var password=document.getElementById("Password");
+			var m="manjunath@gmail.com"
+			var p=12345678
+			if( Email==m && Password=p) {
+				alert("ok")
+				location.href="marvel.html"
+			}
+			else
+			{
+				alert("invalid username or Password");
+				location.href="log.html"
+			}
+		}
+	</script>
+</head>
+<body  background="image.jpg" style="background-repeat: no-repeat;background-size: 100%100%; ">
+	<h2 align="left" style="padding: 200px;">
+		<form action="shop.html" name="myform" onsubmit="return log()">
+			<div>
+				<h3>Login Page</h3>
+				<label>Email:</label>
+				<input type="Email" name="Email" placeholder="Email" id="Email"></br></br>
+				<label>Password:</label>
+				<input type="Password" name="Password" placeholder="Password" id="Password"></br></br>
+				<button onclick="">Login</button>
+				
+			</div>
+		</form>
+	</h2>
+
+</body>
+</html>
